@@ -1,0 +1,4 @@
+lib stlport pthread ;
+alias result : stlport : <link>shared ;
+alias result : stlport pthread/<link>shared : <link>static ;
+
