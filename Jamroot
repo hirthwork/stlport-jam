@@ -1,4 +1,7 @@
-lib stlport pthread ;
-alias result : stlport : <link>shared ;
-alias result : stlport pthread/<link>shared : <link>static ;
+lib stlport stlportg pthread ;
+
+alias stlport-lib : stlport : <runtime-debugging>off ;
+alias stlport-lib : stlportg : <runtime-debugging>on ;
+alias result : stlport-lib : <link>shared ;
+alias result : stlport-lib pthread/<link>shared : <link>static ;
 

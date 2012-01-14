@@ -5,5 +5,6 @@ extend-feature stdlib : stlport ;
 compose <stdlib>stlport
     : <cxxflags>-isystem/usr/include/stlport
       <linkflags>-Wl,--as-needed
-      <library>/stlport//result/<stdlib>native
+      <library>/usr/share/stlport-jam//result/<stdlib>native
     ;
+
